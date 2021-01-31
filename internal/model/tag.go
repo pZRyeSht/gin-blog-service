@@ -1,6 +1,9 @@
 package model
 
-import "github.com/jinzhu/gorm"
+import (
+	"gin_blog_service/pkg/app"
+	"github.com/jinzhu/gorm"
+)
 
 type Tag struct {
 	*Model
@@ -10,6 +13,11 @@ type Tag struct {
 
 func (t Tag) TableName() string {
 	return "blog_tag"
+}
+
+type TagSwagger struct {
+	List  []*Tag
+	Pager *app.Pager
 }
 
 func (t Tag) Count(db *gorm.DB) (int, error) {
@@ -42,12 +50,31 @@ func (t Tag) List(db *gorm.DB, pageOffset, pageSize int) ([]*Tag, error) {
 	return tags, nil
 }
 
+func (t Tag) ListByIDs(db *gorm.DB, ids []uint32) ([]*Tag, error) {
+	var tags []*Tag
+	db = db.Where("state = ? AND is_del = ?", t.State, 0)
+	err := db.Where("id IN (?)", ids).Find(&tags).Error
+	if err != nil && err != gorm.ErrRecordNotFound {
+		return nil, err
+	}
+	return tags, nil
+}
+
+func (t Tag) Get(db *gorm.DB) (Tag, error) {
+	var tag Tag
+	db.Where("id = ? AND is_del = ? AND state = ?", t.ID, 0, t.State)
+	if err := db.First(&tag).Error; err != nil && err != gorm.ErrRecordNotFound {
+		return tag, err
+	}
+	return tag, nil
+}
+
 func (t Tag) Create(db *gorm.DB) error {
 	return db.Create(&t).Error
 }
 
 func (t Tag) Update(db *gorm.DB, values interface{}) error {
-	return db.Model(&t).Where("id = ? AND is_del = ?", t.ID, 0).Update(values).Error
+	return db.Model(&t).Where("id = ? AND is_del = ?", t.ID, 0).Updates(values).Error
 }
 
 func (t Tag) Delete(db *gorm.DB) error {

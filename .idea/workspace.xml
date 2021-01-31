@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3dca59de-d090-4199-801f-09726274272d" name="Default Changelist" comment="" />
+    <list default="true" id="3dca59de-d090-4199-801f-09726274272d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/dao/article.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/dao/article_tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/dao/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/dao/dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/dao/tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/model/auth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/service/article.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/service/service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/service/tag.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/errcode/module_code.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/model/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/model/article.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/model/article_tag.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/model/article_tag.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/model/tag.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/model/tag.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/routers/api/v1/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/routers/api/v1/article.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/routers/api/v1/tag.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/routers/api/v1/tag.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/convert/convert.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/convert/convert.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/errcode/common_code.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/errcode/common_code.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/errcode/errcode.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/errcode/errcode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/logger/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/logger/logger.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +39,45 @@
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1612075573" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main-feat-db-init" />
+                    <option name="lastUsedInstant" value="1612075572" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -44,6 +105,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/internal/dao" />
       <recent name="C:\Users\EscAlice\go\src\gin_blog_service\internal\routers\api\v1" />
       <recent name="C:\Users\EscAlice\go\src\gin_blog_service\internal" />
     </key>
